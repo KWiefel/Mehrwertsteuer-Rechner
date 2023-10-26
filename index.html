@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-Mehrwertsteuer-Rechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mehrwertsteuer-Rechner</h1>
+      <p>- mit liebe erstellt -</p>
+    </header>
+    <main>
+      <div class="calculator__wrapper">
+        <div class="row-1">
+          <h3>Was soll berechnet werden?</h3>
+          <form>
+            <div>
+              <input
+                type="radio"
+                name="typeVat"
+                id="hitVat"
+                checked="checked"
+              />
+              <label for="hitVat"
+                >Mehrwertsteuer aufschlagen (Netto zu Brutto)</label
+              >
+            </div>
+            <div>
+              <input type="radio" name="typeVat" id="substractVat" />
+              <label for="subtractVat"
+                >Mehrwertsteuer abziehen (Brutto zu Netto)</label
+              >
+            </div>
+          </form>
+        </div>
+        <div class="row-2">
+          <h3>Mehrwertsteuersatz</h3>
+          <form>
+            <div>
+              <input
+                type="radio"
+                name="percent"
+                id="percent-19"
+                checked="checked"
+              />
+              <label for="percent-19">19 %</label>
+            </div>
+            <div>
+              <input type="radio" name="percent" id="percent-7" />
+              <label for="percent-7">7 %</label>
+            </div>
+          </form>
+        </div>
+        <div class="row-3">
+          <form>
+            <label id="amountType" for="amount-net"
+              >Nettobetrag (Preis ohne Mehrwertsteuer) in Euro
+              <span>*</span></label
+            >
+            <input type="number" name="amount-net" id="amount-net" />
+          </form>
+        </div>
+        <button onclick="calculate()" class="btn">Berechnen</button>
+        <hr />
+        <p class="result"></p>
+        <div class="row-4">
+          <h3>Mehrwertsteuerbetrag</h3>
+          <p id="resultVat">€</p>
+        </div>
+        <div class="row-5">
+          <h3 id="sumType">Bruttobetrag (Endpreis)</h3>
+          <p id="resultSum">€</p>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
