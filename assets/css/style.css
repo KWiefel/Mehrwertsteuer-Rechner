@@ -11,15 +11,21 @@
 html {
   font-family: "Raleway";
 }
-html header {
-  text-align: center;
-  margin-top: 3%;
+html body {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(65, 221, 202) 100%);
 }
-html main {
+html body header {
+  text-align: center;
+  margin-top: 15px;
+}
+html body header h1 {
+  font-size: 3rem;
+}
+html body main {
   display: flex;
   justify-content: center;
 }
-html main .calculator__wrapper {
+html body main .calculator__wrapper {
   background-color: rgba(6, 17, 16, 0.9098039216);
   margin-top: 25px;
   padding: 1.5em;
@@ -31,31 +37,31 @@ html main .calculator__wrapper {
   box-shadow: 0px 0px 5px 1px #41ddca;
   border-radius: 20px;
 }
-html main .calculator__wrapper h3 {
+html body main .calculator__wrapper h3 {
   padding-bottom: 0.5em;
 }
-html main .calculator__wrapper input {
+html body main .calculator__wrapper input {
   margin: 5px 0;
 }
-html main .calculator__wrapper .row-1,
-html main .calculator__wrapper .row-2,
-html main .calculator__wrapper .row-3,
-html main .calculator__wrapper .row-4,
-html main .calculator__wrapper .row-5 {
+html body main .calculator__wrapper .row-1,
+html body main .calculator__wrapper .row-2,
+html body main .calculator__wrapper .row-3,
+html body main .calculator__wrapper .row-4,
+html body main .calculator__wrapper .row-5 {
   background-color: #41ddca;
   padding: 20px;
   margin: 10px 0;
   border-radius: 20px;
   width: 100%;
 }
-html main .calculator__wrapper .row-1:hover,
-html main .calculator__wrapper .row-2:hover,
-html main .calculator__wrapper .row-3:hover,
-html main .calculator__wrapper .row-4:hover,
-html main .calculator__wrapper .row-5:hover {
+html body main .calculator__wrapper .row-1:hover,
+html body main .calculator__wrapper .row-2:hover,
+html body main .calculator__wrapper .row-3:hover,
+html body main .calculator__wrapper .row-4:hover,
+html body main .calculator__wrapper .row-5:hover {
   box-shadow: 0px 0px 5px 1px #41ddca;
 }
-html main .calculator__wrapper .row-3 input {
+html body main .calculator__wrapper .row-3 input {
   display: block;
   width: 100%;
   padding: 0.5em;
@@ -64,21 +70,21 @@ html main .calculator__wrapper .row-3 input {
   border: none;
   font-size: 1rem;
 }
-html main .calculator__wrapper .row-3 input::-webkit-outer-spin-button, html main .calculator__wrapper .row-3 input::-webkit-inner-spin-button {
+html body main .calculator__wrapper .row-3 input::-webkit-outer-spin-button, html body main .calculator__wrapper .row-3 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-html main .calculator__wrapper .row-3 input:focus {
+html body main .calculator__wrapper .row-3 input:focus {
   outline: none;
 }
-html main .calculator__wrapper .btn {
+html body main .calculator__wrapper .btn {
   background-color: #c7ef00;
   border: none;
   font-size: 1rem;
   padding: 0.5em 1em;
   border-radius: 20px;
 }
-html main .calculator__wrapper .btn:hover {
+html body main .calculator__wrapper .btn:hover {
   box-shadow: 0px 0px 5px 1px #c7ef00;
   font-weight: 600;
 }
