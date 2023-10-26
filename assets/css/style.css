@@ -19,7 +19,11 @@ html body header {
   margin-top: 15px;
 }
 html body header h1 {
-  font-size: 3rem;
+  color: whitesmoke;
+}
+html body header p {
+  color: whitesmoke;
+  padding-top: 1em;
 }
 html body main {
   display: flex;
