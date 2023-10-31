@@ -38,8 +38,8 @@ html {
       justify-content: center;
 
       .calculator__wrapper {
-        background-color: #061110e8;
-        margin-top: 25px;
+        background-color: #06111090;
+        margin: 25px 0;
         padding: 1.5em;
         width: fit-content;
         display: flex;
@@ -48,6 +48,11 @@ html {
         border: 5px solid #41ddca;
         box-shadow: 0px 0px 5px 1px #41ddca;
         border-radius: 20px;
+
+        .header {
+          color: whitesmoke;
+          text-align: center;
+        }
 
         h3 {
           padding-bottom: 0.5em;
